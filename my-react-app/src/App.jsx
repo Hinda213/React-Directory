@@ -8,6 +8,7 @@ import Inputer from "./components/Inputer";
 import NameForm from "./components/NameForm";
 import Notifications from "./components/Notifications";
 import ToggleTheme from "./components/ToggleTheme";
+import UncontroledInput from "./components/UncontroledInput";
 import UserList from "./components/UserList";
 import WelcomeMassage from "./components/WelcomeMassage";
 
@@ -16,6 +17,7 @@ import WelcomeMassage from "./components/WelcomeMassage";
 function App() {
   return (
     <>
+    <UncontroledInput/>
     <NameForm/>
     <Notifications unread={true}/>
     <Notifications unread={false}/>

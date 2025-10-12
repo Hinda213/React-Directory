@@ -10,7 +10,7 @@ function NameForm(){
 
     return(
         <>
-        <h2> Hello, {name}</h2>
+        <h2> Hello, {name || "Hinda Qurux"}</h2>
         <input type="text" value={name} onChange={handleChange} placeholder=" Enter your name" />
         </>
     )
