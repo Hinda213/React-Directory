@@ -11,28 +11,32 @@ import ToggleTheme from "./components/ToggleTheme";
 import UncontroledInput from "./components/UncontroledInput";
 import UserList from "./components/UserList";
 import WelcomeMassage from "./components/WelcomeMassage";
+import CounterDisplay from "./components/CounterDisplay";
+import CounterButtons from "./components/CounterButtons";
 
 
 
 function App() {
   return (
     <>
-    <UncontroledInput/>
-    <NameForm/>
-    <Notifications unread={true}/>
-    <Notifications unread={false}/>
-    <DashBoard isLogedIn={true}/>
-    <WelcomeMassage isLogedIn={true}/>
-    <WelcomeMassage isLogedIn={false}/>
+      <CounterDisplay />
+      <CounterButtons />
+      <UncontroledInput />
+      <NameForm />
+      <Notifications unread={true} />
+      <Notifications unread={false} />
+      <DashBoard isLogedIn={true} />
+      <WelcomeMassage isLogedIn={true} />
+      <WelcomeMassage isLogedIn={false} />
       <Inputer />
       <Clicker />
-      <ToggleTheme IsOnline={true}/>
-      <ToggleTheme IsOnline={false}/>
-      
+      <ToggleTheme IsOnline={true} />
+      <ToggleTheme IsOnline={false} />
+
       <Greetings name="Hinda" surname="Mohamoud" />
       <Header />
       <Counter />
-      <UserList/>
+      <UserList />
     </>
   );
 }
